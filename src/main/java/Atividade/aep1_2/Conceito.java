@@ -7,6 +7,9 @@ public class Conceito {
    private Nota nota;
    
    public Conceito(String idConceito, Avaliação avaliação, Aluno aluno, float nota) {
+	   if(avaliação == null || aluno == null) {
+		   throw new RuntimeException("Erro! Avaliação e Aluno devem ser informados.");
+	   }
 	   this.idConceito = idConceito;
 	   this.avaliação = avaliação;
 	   this.aluno = aluno;

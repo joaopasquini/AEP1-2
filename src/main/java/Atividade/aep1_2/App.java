@@ -3,10 +3,6 @@ package Atividade.aep1_2;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Hello world!
- *
- */
 public class App 
 {
     public static void main( String[] args )
@@ -37,7 +33,11 @@ public class App
     	apresentarMédiaDaEscolaPorDisciplinaNoConsole(conceitos,"Português");
     	apresentarMédiaDaEscolaPorDisciplinaNoConsole(conceitos,"Matemática");
     	
-    	c001.getNota().setNota(12);
+    	//runtimeException nota invalida, deve ser entre 0 e 10.
+    	//Conceito c005 = new Conceito("005",av1,a3,12f);
+    	
+    	//runtimeException poucos argumentos, avaliação e aluno devem ser informados
+    	//Conceito c006 = new Conceito("005",null,null,12f);
     	
     	
     	
